@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Leandro Gonzalez" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Formulario login & register</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Section register-->
+      <div class="signup-section">
+        <header>Registrate</header>
+        <div class="social-btn">
+          <button id="btn-1">
+            <i class="bx bxl-google" style="color: #0ef306"></i>
+          </button>
+          <button id="btn-2">
+            <i class="bx bxl-facebook" style="color: #06ecf3"></i>
+          </button>
+          <button id="btn-3">
+            <i class="bx bxl-instagram" style="color: #f3064a"></i>
+          </button>
+          <button id="btn-4">
+            <i class="bx bxl-github" style="color: #101010"></i>
+          </button>
+        </div>
+        <div class="separator">
+          <div class="line"></div>
+          <p>O</p>
+          <div class="line"></div>
+        </div>
+
+        <!-- Form register -->
+        <form id="form-register">
+          <input
+            type="text"
+            id="full-name"
+            placeholder=""
+            required
+            value="Nombre & Apellido"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="user__name-register"
+            placeholder=""
+            autocomplete="off"
+            value="Usuario"
+            required
+          />
+          <input
+            type="email"
+            id="email-register"
+            placeholder=""
+            autocomplete="off"
+            value="correo@ejemplo.com"
+            required
+          />
+          <input
+            type="password"
+            id="pass-register"
+            placeholder=""
+            autocomplete="off"
+            value="abc123"
+            required
+          />
+          <i class="bx bx-show-alt" id="showPasswordIcon"></i>
+          <a href="#">Olvido su contraseña?</a>
+          <button type="submit" class="btn">Registrarse</button>
+        </form>
+        <p id="mensaje-register"></p>
+      </div>
+
+      <!--Section login-->
+
+      <div class="login-section">
+        <header>Iniciar sesion</header>
+        <div class="social-btn">
+          <button id="btn-5">
+            <i class="bx bxl-google" style="color: #0ef306"></i>
+          </button>
+          <button id="btn-6">
+            <i class="bx bxl-facebook" style="color: #06ecf3"></i>
+          </button>
+          <button id="btn-7">
+            <i class="bx bxl-instagram" style="color: #f3064a"></i>
+          </button>
+          <button id="btn-8">
+            <i class="bx bxl-github" style="color: #101010"></i>
+          </button>
+        </div>
+        <div class="separator">
+          <div class="line"></div>
+          <p>O</p>
+          <div class="line"></div>
+        </div>
+
+        <!-- Form login -->
+        <form id="form-login">
+          <input
+            type="email"
+            id="email-login"
+            placeholder=""
+            autocomplete="off"
+            value="correo@ejemplo.com"
+            required
+          />
+          <input
+            type="password"
+            id="pass-login"
+            placeholder=""
+            autocomplete="off"
+            value="abc123"
+            required
+          />
+          <a href="#">Olvido su contraseña?</a>
+          <button type="submit" class="btn">Iniciar sesion</button>
+        </form>
+        <p id="mensaje-login"></p>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
